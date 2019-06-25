@@ -2,20 +2,6 @@ var version = "0.1";
 
 var bar = "with tree shaking! ";
 
-function _typeof(obj) {
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function (obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function (obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
 var grumpy = [
 	"█▄                        ▄▄███",
 	"███▄                    ▄██████",
@@ -214,7 +200,6 @@ catMe.catNames = catNames_1;
 
 var out = catMe();
 console.log(out);
-console.log(_typeof(out));
 var cat = out.replace(/ /g, "&nbsp;");
 
 function styleInject(css, ref) {
