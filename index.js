@@ -244,7 +244,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css = "#app {\n  position: relative;\n  padding-top: 40%;\n  width: 100%;\n  max-width: 400px;\n  margin: 0 auto;\n\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen,\n    Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  z-index: 1;\n}\n\n#cat-container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n  position: absolute;\n  top: 0;\n  left: 0;\n\n  width: 100%;\n  height: 100%;\n  z-index: 0;\n}\n\n#cat {\n  white-space: pre-wrap;\n  font-family: monospace;\n  color: crimson;\n  margin-top: 400px;\n}\n";
+var css = "#app {\n  position: relative;\n  padding-top: 40vh;\n  width: 100%;\n  max-width: 400px;\n  margin: 0 auto;\n\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen,\n    Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  z-index: 1;\n}\n\n#cat-container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n  position: absolute;\n  top: 0;\n  left: 0;\n\n  width: 100%;\n  height: 100%;\n  z-index: 0;\n}\n\n#cat {\n  white-space: pre-wrap;\n  font-family: monospace;\n  color: crimson;\n  margin-top: 400px;\n}\n";
 styleInject(css);
 
 var makeCat = function makeCat() {
