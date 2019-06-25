@@ -3,18 +3,28 @@
   "license": "MIT",
   "version": "0.1",
   "scripts": {
+    "dev": "rollup -c --watch",
     "build": "rm -rf dist && rollup -c",
     "build-stream": "rollup -c --dir ''",
     "run-build": "serve -d dist",
-    "go": "yarn build && yarn run-build"
+    "go": "yarn build && yarn run-build",
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "core-js": "3",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-bundle-html": "^0.2.1",
-    "rollup-plugin-json": "^4.0.0"
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.0.4",
+    "rollup-plugin-postcss": "^2.0.3",
+    "systemjs": "^3.1.6"
+  },
+  "dependencies": {
+    "cat-me": "^1.0.3"
   }
 }

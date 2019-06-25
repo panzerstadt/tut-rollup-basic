@@ -1,1 +1,1 @@
-export default "with tree shaking!";
+export default "with tree shaking! ";
